@@ -1,5 +1,6 @@
+# Needs Input Mono font - /usr/share/fonts
 [options]
-font = Inconsolata 8
+font = Input Mono 7
 scroll_on_output = false
 scroll_on_keystroke = true
 audible_bell = false
@@ -17,7 +18,7 @@ cursor_shape = underline
 # Base16 Eighties
 # Scheme: Chris Kempson (http://chriskempson.com)
 
-foreground      = #d3d0c8
+foreground      = #ffffff
 foreground_bold = #d3d0c8
 cursor          = #777777
 background      = rgba(19, 0, 26, 0.89)
@@ -47,4 +48,3 @@ color18 = #393939
 color19 = #515151
 color20 = #a09f93
 color21 = #e8e6df
-
