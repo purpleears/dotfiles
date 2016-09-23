@@ -1,4 +1,3 @@
-# Needs Input Mono font - /usr/share/fonts
 [options]
 font = Input Mono 7
 scroll_on_output = false
@@ -21,25 +20,25 @@ cursor_shape = underline
 foreground      = #ffffff
 foreground_bold = #d3d0c8
 cursor          = #777777
-background      = rgba(19, 0, 26, 0.89)
+background      = rgba(13, 1, 7, 0.92)
 
 # 16 color space
-color0  = #2d2d2d
-color1  = #f2777a
-color2  = #99cc99
-color3  = #ffcc66
-color4  = #6699cc
-color5  = #cc99cc
-color6  = #66cccc
-color7  = #d3d0c8
-color8  = #747369
-color9  = #f2777a
-color10 = #99cc99
-color11 = #ffcc66
-color12 = #6699cc
-color13 = #cc99cc
-color14 = #66cccc
-color15 = #f2f0ec
+color0  = #1E1E1E
+color1  = #CF6A4C
+color2  = #8F9D6A
+color3  = #F9EE98
+color4  = #7587A6
+color5  = #9B859D
+color6  = #AFC4DB
+color7  = #A7A7A7
+color8  = #5F5A60
+color9  = #CF6A4C
+color10 = #8F9D6A
+color11 = #F9EE98
+color12 = #7587A6
+color13 = #9B859D
+color14 = #AFC4DB
+color15 = #FFFFFF
 
 # 256 color space
 color16 = #f99157
