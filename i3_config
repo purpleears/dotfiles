@@ -139,21 +139,30 @@ bindsym $mod+r mode "resize"
 bar {
         status_command i3status
         position top
-}
 
-# Execs
-exec feh --bg-scale ~/pictures/bubble.jpg
+colors {
+            background #000000
+            statusline #ffffff
+
+            focused_workspace #51082f #51082f #EEEEEE
+            #focused_workspace  #ffffff #285577
+            active_workspace   #51082f #333333
+            inactive_workspace #ffffff #000000
+            urgent_workspace   #ffffff #900000
+        }
+}
+#Execs
+exec feh --bg-scale ~/pictures/awenda.png
 exec xcompmgr -c -f -n
 
 # Gaps
-gaps inner 7
-gaps outer 7
+gaps inner 40
+gaps outer 0
 
 # Random
 new_window 1pixel
 #class border backgr indicator
-client.focused #880E4F #880E4F #880E4F
+client.focused #880E4F #880E4F #880E4F #36051f
 
-# Key Shortcuts
 bindsym $mod+Control+c exec chromium
 bindsym $mod+Control+d exec deadbeef
