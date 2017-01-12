@@ -1,49 +1,86 @@
+  GNU nano 2.7.3                                                                                                                                                                                            File: config                                                                                                                                                                                                      
+
+# Needs Input Mono font - /usr/share/fonts
 [options]
-font = Input Mono 7
+font = Iosevka 14
 scroll_on_output = false
 scroll_on_keystroke = true
 audible_bell = false
 mouse_autohide = false
-allow_bold = false
+allow_bold = true
 dynamic_title = true
 urgent_on_bell = true
 clickable_url = true
 scrollback_lines = 10000
 search_wrap = true
-cursor_blink = on
+cursor_blink = off
 cursor_shape = underline
 
-[colors]
-# Base16 Eighties
-# Scheme: Chris Kempson (http://chriskempson.com)
-
-foreground      = #ffffff
-foreground_bold = #d3d0c8
-cursor          = #777777
-background      = rgba(13, 1, 7, 0.92)
+#foreground      = #ffffff
+#foreground_bold = #d3d0c8
+#cursor          = #777777
+background      = rgba(0, 0, 0, 0.89)
 
 # 16 color space
-color0  = #1E1E1E
-color1  = #CF6A4C
-color2  = #8F9D6A
-color3  = #F9EE98
-color4  = #7587A6
-color5  = #9B859D
-color6  = #AFC4DB
-color7  = #A7A7A7
-color8  = #5F5A60
-color9  = #CF6A4C
-color10 = #8F9D6A
-color11 = #F9EE98
-color12 = #7587A6
-color13 = #9B859D
-color14 = #AFC4DB
-color15 = #FFFFFF
+#color0 = #5e2141
+#color1 = #481430
+#color2 = #781434
+#color3 = #8d2c4d
+#color4 = #7c4062
+#color5 = #904b77
+#color6 = #593857
+#color7 = #60506b
+#color8 = #73637e
+#color9 = #3e4660
+#color10 = #4d6776
+#color11 = #273c4d
+#color12 = #5b7c8f
+#color13 = #ec69b5
+#color14 = #135255
+#color15 = #ffffff
 
 # 256 color space
-color16 = #f99157
-color17 = #d27b53
-color18 = #393939
-color19 = #515151
-color20 = #a09f93
-color21 = #e8e6df
+#color16 = #f99157
+#color17 = #d27b53
+#color18 = #393939
+#color19 = #515151
+#color20 = #a09f93
+#color21 = #e8e6df
+
+# special
+foreground      = #c5c8c6
+foreground_bold = #c5c8c6
+cursor          = #c5c8c6
+#background      = #1d1f21
+
+# black
+color0  = #282a2e
+color8  = #373b41
+
+# red
+color1  = #a54242
+color9  = #cc6666
+
+# green
+color2  = #8c9440
+color10 = #b5bd68
+
+# yellow
+color3  = #de935f
+color11 = #f0c674
+
+# blue
+color4  = #5f819d
+color12 = #81a2be
+
+# magenta
+color5  = #85678f
+color13 = #b294bb
+
+# cyan
+color6  = #5e8d87
+color14 = #8abeb7
+
+# white
+color7  = #707880
+color15 = #c5c8c6
