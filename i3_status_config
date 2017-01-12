@@ -1,3 +1,5 @@
+  GNU nano 2.7.3                                                                                                                                                                                            File: config                                                                                                                                                                                                      
+
 # 08-29-16 - FontAwesome Fonts, Load, CPU Usage
 # http://fontawesome.io/ - http://fontawesome.io/cheatsheet/
 # i3status configuration file.
@@ -13,36 +15,26 @@ general {
         interval = 1
 }
 
-order += "run_watch VPN"
-order += "run_watch DHCP"
+order += "path_exists VPN"
+order += "wireless wlp2s0"
 order += "volume master"
-order += "ethernet _first_"
 order += "disk /"
 order += "load"
 order += "cpu_usage"
+order += "battery 0"
 order += "tztime local"
 
-wireless _first_ {
-        format_up = "W: (%quality at %essid) %ip"
-        format_down = "W: down"
+wireless wlp2s0 {
+        format_up = " %quality"
+        format_down = " down"
 }
 
-ethernet _first_ {
-        # if you use %speed, i3status requires root privileges
-        format_up = " %ip"
-        format_down = "E: down"
-}
-
-run_watch DHCP {
-        pidfile = "/var/run/dhclient*.pid"
-}
-
-run_watch VPN {
-        pidfile = "/var/run/vpnc/pid"
+path_exists VPN {
+        path = "/proc/sys/net/ipv4/conf/tun0"
 }
 
 tztime local {
-        format = " %Y-%m-%d %H:%M:%S"
+        format = " %b %d %Y-> %l:%M:%S"
 }
 
 load {
@@ -64,6 +56,20 @@ volume master {
   mixer = "Master"
   mixer_idx = 0
 }
+
+battery 0 {
+    format = "  %status %percentage (%consumption)"
+    path = "/sys/class/power_supply/BAT0/uevent"
+    low_threshold = "20"
+    threshold_type = "time"
+    last_full_capacity = true
+    integer_battery_capacity = true
+}
+
+#battery 0 {
+#format = "%status %percentage %remaining"
+#path = "/sys/class/power_supply/BAT0/uevent"
+#}
 
 cpu_usage {
   format = " %usage"
