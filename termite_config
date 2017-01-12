@@ -1,6 +1,3 @@
-  GNU nano 2.7.3                                                                                                                                                                                            File: config                                                                                                                                                                                                      
-
-# Needs Input Mono font - /usr/share/fonts
 [options]
 font = Iosevka 14
 scroll_on_output = false
