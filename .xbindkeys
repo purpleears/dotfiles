@@ -1,0 +1,30 @@
+# For Thinkpad x240 with Arch/i3-gaps
+#
+# Should be usable with other laptops, but you will have to run xbindkeys -k to
+# output the necessary key numbers to replace in this file.
+
+# Increase volume
+"amixer -q sset Master 3%+"
+    m:0x4 + c:123
+    XF86AudioRaiseVolume
+
+# Decrease volume
+"amixer -q sset Master 3%-"
+    m:0x4 + c:122
+    XF86AudioLowerVolume
+
+# Toggle mute
+"amixer -q set Master 0%"
+    m:0x4 + c:121
+    XF86AudioMute
+
+# Toggle Backlight Up
+"xbacklight -inc 25"
+    m:0x4 + c:233
+    XF86MonBrightnessUp
+
+# Toggle Backlight Down
+"xbacklight -dec 25"
+    m:0x4 + c:232
+XF86MonBrightnessDown
+
